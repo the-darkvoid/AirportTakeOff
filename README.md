@@ -3,7 +3,7 @@ Airport TakeOff
 
 Airport TakeOff is a OS X kext module to inject the required information to use the BCM94352Z with OS X Yosemite.
 
-It uses AppleMergeUSBNub to merge data into `AirPort_Brcm4360`, `AirPort_Brcm4360_Interface` and `IOPCIDevice`.
+It uses AppleMergeUSBNub to merge data into `IOPCIDevice`, `AirPort_Brcm4360` and `AirPort_Brcm4360_Interface`.
 
 For the matching IOPCIDevice it merges the following properties:
 
