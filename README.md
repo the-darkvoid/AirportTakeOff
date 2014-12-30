@@ -26,4 +26,9 @@ For AirPort_Brcm4360_Interface:
  * `IO80211Locale` **FCC** _Change card locale to enable 5ghz channels_
  * `IOBuiltin` **true**
 
+#### Credits
+
+ * Toleda for [original bcm4352.kext](https://github.com/toleda/wireless_half-mini/tree/master/airport_kext_enabler)
+ * Eps for [using AppleUsbMergeNub to inject IOPCIDevice properties](http://www.insanelymac.com/forum/topic/238332-devicemergenub-for-dsm-style-injection/page-3#entry1599569)
+
 
