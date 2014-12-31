@@ -5,7 +5,20 @@ Airport TakeOff is a OS X kext module to inject the required information to use 
 
 It uses AppleMergeUSBNub to merge data into `IOPCIDevice`, `AirPort_Brcm4360` and `AirPort_Brcm4360_Interface`.
 
-For the matching IOPCIDevice it merges the following properties:
+Even though [AppleUSBMergeNub](http://www.opensource.apple.com/source/IOUSBFamily/IOUSBFamily-630.4.5/AppleUSBMergeNub/Classes/AppleUSBMergeNub.cpp) is meant to merge properties in IOUSBDevices, it does allow merging into IOPCIDevice also.
+
+Excerpt from AppleUSBMergeNub.cpp:
+
+    OSDictionary *providerDict = (OSDictionary*)getProperty("IOProviderMergeProperties");
+    if (providerDict)
+    {
+        //   provider->getPropertyTable()->merge(providerDict);		// merge will verify that this really is a dictionary
+        MergeDictionaryIntoProvider( provider, providerDict);
+    }
+    
+    return NULL;								// always fail the probe!
+
+For the matching IOPCIDevice Airport TakeOff merges the following properties:
 
  * `AAPL,slot-name` **Airport**
  * `revision-id` **03 00 00 00**
