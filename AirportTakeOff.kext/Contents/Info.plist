@@ -36,70 +36,8 @@
 			<string>AirPort_Brcm4360</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>APChipRev</key>
-				<integer>3</integer>
-				<key>APFeatures</key>
-				<integer>1</integer>
-				<key>APTAPD</key>
-				<integer>1</integer>
-				<key>IOLocale</key>
-				<string>Worldwide</string>
 				<key>IOVendor</key>
 				<string>Apple</string>
-			</dict>
-		</dict>
-		<key>AirPort_Brcm4360_Interface Inject</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
-			<key>IO80211DriverVersion</key>
-			<string>*</string>
-			<key>IO80211HardwareVersion</key>
-			<string>*</string>
-			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
-			<key>IOProviderClass</key>
-			<string>AirPort_Brcm4360_Interface</string>
-			<key>IOProviderMergeProperties</key>
-			<dict>
-				<key>IO80211CountryCode</key>
-				<string>US</string>
-				<key>IO80211Locale</key>
-				<string>FCC</string>
-				<key>IOBuiltin</key>
-				<true/>
-			</dict>
-		</dict>
-		<key>Airport Device Inject</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
-			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
-			<key>IONameMatch</key>
-			<array>
-				<string>pci14e4,43b1</string>
-			</array>
-			<key>IOProviderClass</key>
-			<string>IOPCIDevice</string>
-			<key>IOProviderMergeProperties</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<data>
-				QWlyUG9ydA==
-				</data>
-				<key>revision-id</key>
-				<data>
-				AwAAAA==
-				</data>
-				<key>subsystem-id</key>
-				<data>
-				NAEAAA==
-				</data>
-				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
 			</dict>
 		</dict>
 		<key>Airport_Brcm4360</key>
