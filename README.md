@@ -18,26 +18,9 @@ Excerpt from AppleUSBMergeNub.cpp:
     
     return NULL;								// always fail the probe!
 
-For the matching IOPCIDevice Airport TakeOff merges the following properties:
+For the matching Airport_Brcm4360 Airport TakeOff merges the following properties:
 
- * `AAPL,slot-name` **Airport**
- * `revision-id` **03 00 00 00**
- * `subsystem-id` **34 01 00 00**
- * `subsystem-vendor-id` **6b 01 00 00**
-
-For AirPort_Brcm4360:
-
- * `APChipRev` **3**
- * `APFeatures` **1**
- * `APTAPD` **1**
- * `IOLocale` **Worldwide**
  * `IOVendor` **Apple** _This makes the device appear as Apple Airport Extreme_
-
-For AirPort_Brcm4360_Interface:
-
- * `IO80211CountryCode` **US** _Change card country code to enable 5ghz channels_
- * `IO80211Locale` **FCC** _Change card locale to enable 5ghz channels_
- * `IOBuiltin` **true**
 
 #### Credits
 
